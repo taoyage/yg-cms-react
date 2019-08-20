@@ -1,15 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import App from '../App';
 
 import User from '../pages/user';
-import Accounts from '../pages/accounts';
 
 const AppRouter = () => (
   <Router>
-    <Switch>
-      <Route path="/user" component={User} />
-      <Route path="/accounts" component={Accounts} />
-    </Switch>
+    <App>
+      <Switch>
+        <Route exact path="/" render={() => <Redirect to="/user" />}></Route>
+        <Route path="/user" component={User} />
+      </Switch>
+    </App>
   </Router>
 );
 

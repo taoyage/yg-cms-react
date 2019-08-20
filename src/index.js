@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './App';
+import Router from './router';
+import './styles/base.scss';
 
 const render = Component => {
   ReactDOM.render(
@@ -12,11 +13,11 @@ const render = Component => {
   );
 };
 
-render(App);
+render(Router);
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
-    const NextAppContainer = require('./App').default;
+  module.hot.accept('./router', () => {
+    const NextAppContainer = require('./router').default;
     render(NextAppContainer);
   });
 }

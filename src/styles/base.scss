@@ -1,0 +1,31 @@
+@import './variable.scss';
+
+html,
+body,
+#root {
+  height: 100%;
+  min-width: $min-width;
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+}
+
+.yg-main {
+  background-color: $color-background;
+  color: $color-text;
+  display: flex;
+  height: auto;
+  user-select: none;
+  width: 100%;
+  height: $main-height;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -32,7 +32,10 @@ module.exports = merge(baseWebpackConfig, {
   },
   externals: {
     react: 'React',
-    'react-dom': 'ReactDOM'
+    'react-dom': 'ReactDOM',
+    'react-redux': 'ReactRedux',
+    redux: 'Redux',
+    'redux-thunk': 'ReduxThunk'
   },
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   module: {
@@ -101,6 +104,18 @@ module.exports = merge(baseWebpackConfig, {
           __dirname,
           '../node_modules/react-dom/umd/react-dom.production.min.js'
         ),
+        to: utils.assetsPath('js')
+      },
+      {
+        from: path.join(__dirname, '../node_modules/react-redux/dist/react-redux.min.js'),
+        to: utils.assetsPath('js')
+      },
+      {
+        from: path.join(__dirname, '../node_modules/redux/dist/redux.min.js'),
+        to: utils.assetsPath('js')
+      },
+      {
+        from: path.join(__dirname, '../node_modules/redux-thunk/dist/redux-thunk.min.js'),
         to: utils.assetsPath('js')
       }
     ])

@@ -20,7 +20,7 @@ module.exports = {
     // 是否在浏览器中显示eslint错误提示遮罩层
     showEslintErrorsInOverlay: false,
     // 显示浏览器提示遮罩层（此项如果设置为false，showEslintErrorsInOverlay也设置为false）
-    errorOverlay: false,
+    errorOverlay: true,
     poll: true,
     title: 'demo',
     // 代理配置
@@ -28,7 +28,12 @@ module.exports = {
     // 可注入的环境变量
     NODE_ENV: {},
     alias: {
-      'react-dom': '@hot-loader/react-dom'
+      'react-dom': '@hot-loader/react-dom',
+      base: path.resolve(__dirname, './src/base'),
+      components: path.resolve(__dirname, './src/components'),
+      styles: path.resolve(__dirname, './src/styles'),
+      utils: path.resolve(__dirname, './src/utils'),
+      api: path.resolve(__dirname, './src/api')
     }
   },
   build: {

@@ -20,12 +20,15 @@ module.exports = {
   settings: {
     react: {
       pragma: 'React',
-      version: '16.8.3'
+      version: '16.8.6'
     }
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   rules: {
     semi: ['error', 'always'],
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/display-name': 0
   }
 };

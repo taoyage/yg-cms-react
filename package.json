@@ -34,8 +34,11 @@
     "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -64,6 +67,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "eslint-plugin-standard": "^4.0.0",
     "file-loader": "^4.0.0",
     "happypack": "^5.0.1",
@@ -78,7 +82,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
-    "react-hot-loader": "^4.8.0",
+    "react-hot-loader": "^4.12.10",
+    "redux-devtools-extension": "^2.13.8",
     "sass-loader": "^7.1.0",
     "shelljs": "^0.8.3",
     "style-loader": "^0.23.1",

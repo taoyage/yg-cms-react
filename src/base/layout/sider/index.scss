@@ -1,0 +1,38 @@
+@import '../../../styles/variable.scss';
+
+.yg-sider {
+  background: $color-background-theme;
+  border-right: 1px solid transparent;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  flex: 0 0 200px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 2;
+
+  .ant-menu {
+    background: none;
+    border-color: transparent;
+    margin-top: 20px;
+
+    a {
+      color: $gray;
+    }
+
+    & :hover {
+      color: $color-text;
+    }
+
+    .ant-menu-item.ant-menu-item-selected {
+      background: none;
+      padding-left: 24px;
+
+      a {
+        color: $color-text;
+      }
+    }
+
+    .ant-menu-item.ant-menu-item-selected:after {
+      border-right: 4px solid #249afa;
+    }
+  }
+}

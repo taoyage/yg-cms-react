@@ -1,0 +1,28 @@
+// 颜色定义规范
+$white: #fff;
+$black: #000;
+$gray: #999;
+
+$color-background-header: #02091d;
+
+$color-background: #111629;
+$color-background-theme: #19213c;
+$color-background-theme-d: #02091d;
+$color-background-theme-l: rgba(25, 33, 61, 0.3);
+
+$color-text: $white;
+$color-text-d: #ddd;
+// $color-text-l:
+$color-text-link: #2fb1df;
+
+//字体定义规范
+$font-size-small-s: 10px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-medium-x: 16px;
+$font-size-large: 18px;
+$font-size-large-x: 22px;
+
+// 区域大小
+$main-height: calc(100vh - 60px);
+$min-width: 1200px;
